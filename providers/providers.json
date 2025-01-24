@@ -1,0 +1,20 @@
+[
+    {
+      "url": "https://imginn.com",
+      "headlessBrowser": false,
+      "provider": "Imgsed",
+      "canget": ["Post", "Comments", "Search"]
+    },
+    {
+      "url": "https://anonyig.com",
+      "headlessBrowser": false,
+      "provider": "Storiesig",
+      "canget": ["Profile", "Stories"]
+    },
+    {
+      "url": "https://picuki.me",
+      "headlessBrowser": false,
+      "provider": "Wizstat",
+      "canget": ["Profile", "Posts", "Post", "Comments"]
+    }
+  ]
