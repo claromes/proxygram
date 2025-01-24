@@ -1,46 +1,9 @@
-<a name="readme-top"></a>
+> [!NOTE]
+> Forked project from [codeberg.org/proxigram](https://codeberg.org/proxigram/proxigram).
 
-<br />
-<div align="center">
-  <h3 align="center">Proxigram</h3>
+# Proxigram
 
-  <p align="center">
-    A privacy focused and open source alternative front-end for Instagram
-    <br/>
-  </p>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-       <li><a href="#why">Why?</a></li>
-       <li><a href="#screenshots">Screenshots</a></li>
-       <li><a href="#features">Features</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#resources">Resources</a></li>
-    <li>
-      <a href="#installation">Installation</a>
-      <ul>
-       <li><a href="#manual">Manual</a></li>
-       <li><a href="#docker">Docker</a></li>
-      </ul>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#legal-notice">Legal notice</a></li>
-  </ol>
-</details>
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-Proxigram: A privacy focused and and open source front-end for Instagram.
+Proxigram: A privacy focused and open-source front-end for Instagram.
 Inspired by [ProxiTok](https://github.com/pablouser1/ProxiTok), [Nitter](https://github.com/zedeus/nitter/), [LibreMdb](https://codeberg.org/zyachel/libremdb), and [many others](https://github.com/digitalblossom/alternative-frontends)
 
 ### Why?
@@ -51,15 +14,11 @@ There are other Instagram viewers out there, but some of them can be a little tr
 
 Using an instance of Proxigram, you can browse Instagram without JavaScript while retaining your privacy with all the requests going through the server. The client never talks to Instagram or other service providers (unless it is specified).
 
-### Screenshots
-
-![instagram profile in proxigram](/public/screenshot.png)
-
 ### Features
 
--   See user profile and feed
--   See individual post
--   See tags
+-   User profile and feed
+-   Individual post
+-   Tags
 -   Stories
 -   RSS feeds
     -   `/{username}/rss` -> Feed
@@ -74,102 +33,16 @@ Using an instance of Proxigram, you can browse Instagram without JavaScript whil
     -   `/api/p/{shortcode}/comments` -> post's comments
     -   `/api/tag/{tag}` -> tag posts
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
--   [x] Add stories
--   [ ] Add highlights
--   [x] Add rss feed
--   [ ] Add settings
-    -   [ ] Enable or disable proxy
-    -   [ ] Infinity scroll
-    -   [ ] Redirect URLs
-    -   [ ] Choose providers
-    -   [ ] Healthiness of providers
-
-See the [open issues](https://codeberg.org/ThePenguinDev/Proxigram/issues) for a full list of proposed features and known issues.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Resources
-
--   [Wiki page of public instances](https://codeberg.org/ThePenguinDev/Proxigram/wiki/Instances)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- Installation -->
-
 ## Installation
 
 As Proxigram is made with Next.js, you can deploy it anywhere where Next.js is supported. Below are a few other methods:
-
-### Manual
-
-1. Install Node.js ([Node.js website](https://nodejs.org))
-2. Install git ([Git website](https://git-scm.com))
-3. Install redis ([Redis website](https://redis.io))
-4. Clone and setup the project
-
-Clone the repository.
-
-```bash
-git clone https://codeberg.org/ThePenguinDev/proxigram.git
-```
-
-Move to the folder.
-
-```bash
-cd proxigram
-```
-
-Change the configuration to your needs.
-
-```bash
-cp .env.example .env
-```
-
-Replace 'pnpm' with yarn or npm if you use those.
-
-```bash
-pnpm install
-```
-
-> If headless providers are enabled, you need to install the browser.
-> Use one of these commands to install the browser binary:
-
--   pnpm add playwright-chromium@1.34.3
--   yarn add playwright-chromium@1.34.3
--   npm install playwright-chromium@1.34.3
-
-Create build.
-
-```bash
-pnpm build
-```
-
-Start redis server.
-
-If "CACHE" is set to false (not recommended), it is not necessary. Check .env
-
-```bash
-redis-server (or docker)
-```
-
-Start the server.
-
-```bash
-pnpm start
-```
 
 ### Docker
 
 Clone the repository.
 
 ```bash
-git clone https://codeberg.org/ThePenguinDev/proxigram.git
+git clone https://github.com/claromes/proxygram
 ```
 
 Move to the folder.
@@ -190,15 +63,9 @@ Start containers.
 docker compose up -d
 ```
 
-<!-- LICENSE -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## License
 
-Distributed under the AGPLv3 License. See `LICENSE` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ This project is a fork of [codeberg.org/proxigram](https://codeberg.org/proxigram/proxigram). Distributed under the AGPLv3 License. See `LICENSE` for more information.
 
 ## Legal Notice
 
